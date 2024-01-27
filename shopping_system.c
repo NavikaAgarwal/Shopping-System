@@ -5,7 +5,7 @@ int main() {
     static int totalCost;
     float TOTAL = 0;
 
-    int i, j, choice, c = 1, a[9], cost[9], pin = 0, exit_choice = 1; // Initialize exit_choice
+    int i, j, choice, c = 1, a[9], cost[9], pin = 0, exit_choice = 1;
     char str[100];
     char items[4][100] = {
         "WHEAT 1 KG",
@@ -23,7 +23,7 @@ int main() {
 
     printf("Please Enter Your Name\n");
     fgets(str, sizeof(str), stdin);
-    str[strcspn(str, "\n")] = '\0';  // Remove the newline character
+    str[strcspn(str, "\n")] = '\0';
 
     printf("Hello %s, Welcome to our Online Shopping.\n", str);
     printf("\n****************SECURITY CODE TO ACCESS BANKING SERVICE IS 1520****************\n");
@@ -185,11 +185,11 @@ int main() {
 
             default: {
                 printf("Exit from program\n");
-                exit_choice = 0; // Update exit_choice to exit the loop
+                exit_choice = 0;
                 break;
             }
         }
-    } while (exit_choice == 1); // Update loop condition
+    } while (exit_choice == 1);
 
     return 0;
 }
